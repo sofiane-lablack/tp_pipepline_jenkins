@@ -10,13 +10,13 @@ pipeline {
         }
         stage('build') { 
             steps {
-                sh "cd jenkins-helloworld/ && javac Main.java"
+                sh "cd tp_pipepline_jenkin/ && javac Main.java"
                 // 
             }
         }
         stage('run') { 
             steps {
-                sh "cd jenkins-helloworld/ && java Main"
+                sh "cd tp_pipepline_jenkin/ && java Main"
                 // 
             }
         }
